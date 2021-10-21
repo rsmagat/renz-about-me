@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Us</title>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<script src="script.js"></script>
+	<meta charset="utf-8" />
+</head>
+<body>
+	<section id = wrapper>
+		<header>
+			<section id="navheader">
+				<img src="images/frank.gif" alt="" />
+				<img src="images/contactheader.gif" alt="" />
+			</section>
+
+			<section id="mainnav">
+				<ul>
+					<li><a href="index.html"><img src="images/homepage.gif" alt="" /></a></li>
+					<li><a href="about.html"><img src="images/about.gif" alt="" /></a></li>
+					<li><a href="portfolio.html"><img src="images/portfolio.gif" alt="" /></a></li>
+					<li><a href="contact.html"><img src="images/contact.gif" alt="" /></a></li>
+				</ul>
+			</section>
+		</header>
+
+		<section id="contentcontact">
+			<div id="contenthead">
+				<img src="images/inquiry.gif" alt="" />
+			</div>
+
+			<form id="inquiryForm" method="post">
+				<fieldset>
+					<legend><b>REQUIRED INFORMATION</b></legend>
+					<ul>
+						<li>
+							<label for="fullname">Name:</label>
+							<input type="text" name="fullname" id="fullname">
+							<p id="fullname_error" class="error">*Name is required.</p>
+							<p id="name_invalid" class="error">*Name is invalid.</p>
+						</li>
+						<li>
+							<label for="email">Emai:</label>
+							<input type="email" name="email" id="email">
+							<p id="email_error" class="error">*Email is required.</p>
+							<p id="email_invalid" class="error">*Email is invalid.</p>
+						</li>
+						<li>
+							<label for="telephone">Phone:</label>
+							<input type="tel" name="telephone" id="telephone" placeholder="123 - 456 - 789">
+							<p id="telephone_error" class="error">*Phone is required.</p>
+							<p id="phone_invalid" class="error">*Phone is invalid.</p>
+						</li>
+					</ul>
+
+					<div>
+						<textarea rows="4" cols="50" name="comment" id="commentarea">Enter your comment here...</textarea>
+						<p id="commentarea_error" class="error">*Comment is required.</p>
+					</div>
+					<input type="submit" value="Submit" id="submit">
+					<input type="reset" value="Reset" id="reset">
+				</fieldset>
+			</form>
+		</section>
+		
+		<footer id="footer">
+			<section id="firstfooter">
+				<ul id="withpipe">
+					<li><a href="index.html">HOMEPAGE</a></li>
+					<li><a href="about.html">ABOUT ME</a></li>
+					<li><a href="portfolio.html">PORTFOLIO</a></li>
+					<li><a href="contact.html">CONTACT US</a></li>
+				</ul>
+			</section>
+
+			<section id="secondfooter">
+				<ul>
+					<li><a href="https://www.facebook.com/"><img src="images/fb.png" alt="" /></a></li>
+					<li><a href="https://twitter.com/"><img src="images/twitter.png" alt="" /></a></li>
+				</ul>
+			</section>
+		</footer>
+	</section>
+</body>
+</html>
